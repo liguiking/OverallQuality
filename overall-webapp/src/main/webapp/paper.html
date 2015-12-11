@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title>六年级问卷</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="renderer" content="webkit">
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap/bootstrap-datetimepicker.css">
+<link rel="stylesheet" href="css/bootstrap-icheck.css">
+
+<!--[if IE ]>
+<link rel="stylesheet" href="css/cntest.ie.min.css"/>
+<link rel="stylesheet" href="css/survey_answer_ie.css"/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="css/bootstrap/font-awesome-ie7.min.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="/survey/static/scripts/lib/bootstrap/html5shiv.js"></script>
+<script src="/survey/static/scripts/lib/bootstrap/respond.min.js"></script>
+<![endif]-->
+</head>
+<body entry="/answer/answer" rootpath="/survey/" >
+    <nav id="navigation" class="navbar navbar-default navbar-fixed-top tool-bar" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-navbar-collapse-1">
+                    <span class="sr-only">开/关导航栏</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index"></a>
+            </div>
+	        <div class="navbar-collapse collapse" id="bs-navbar-collapse-1" style="height: 1px;">
+                <div class="writer-detail"></div>
+	        </div>
+        </div>
+    </nav> 
+    <div class="container-fluid" >
+      <div class="col-sm-1 col-md-2 "></div>
+      <div class="col-xs-12 col-sm-10 col-md-8 ">  
+        <div id="mobileLogin">
+          <p class="text-warning">请点击右上角按钮登录后填写六年级学生问卷<p>      
+        </div>
+        <div class="logintips">
+          <p class="text-success">请登录后填写六年级学生问卷<p>      
+        </div>        
+        <form class="form-edit" visibled="false" id="questionForm" method="POST" action="answer/direct/-1/-1"> 
+          <article>
+            <h1 style="text-align:center;">六年级学生问卷</h1>
+            <p>亲爱的同学：您好！</p>
+            <p class="desc">非常感谢您抽出时间完成这份调查！本项调查旨在了解小学生基本的学习和生活情况。<b class="strong">请您将自己实际的想法、做法与题目所陈述的情况相对照，然后选择一个与自己的实际最接近的答案</b></p>
+            <p class="desc">本次调查的<b class="strong">问题选项无对错之分</b>，调查结果严格<b class="strong">保密</b>，不会对你个人造成任何影响，所以请你不要有任何顾虑，看清题目，仔细如实作答，不要漏答任何一题！</p>
+            <p class="desc">所以请你不要有任何顾虑，看清题目，仔细如实作答，不要漏答任何一题！</p>
+            <p class="desc">答题时间约30分钟。</p>
+            <section required="true" class="section-block-0" id="item1">
+              <h4>1 你的性别是？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item1" value="男" ><b>男</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item1" value="女" ><b>女</b></label>
+                </div>
+              </div>
+            </section>
+             <section required="true" class="section-block-0" id="item3">
+              <h4>2 你是哪一年出生的？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item3" value="早于2002年或2002年" ><b>早于2002年或2002年 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item3" value="2003年" ><b>2003年</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item3" value="2004年" ><b>2004年  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item3" value="2005年或晚于2005年" ><b>2005年或晚于2005年</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item4">
+              <h4>3 你是独生子女（你爸妈只有你一个孩子）吗？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item4" value="是" ><b>是</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item4" value="不是" ><b>不是</b></label>
+
+                </div>
+              </div>
+            </section>
+             <section required="true" class="section-block-0" id="item5">
+              <h4>4 你的父母询问你在学校里正在学的内容吗？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item5" value="每天" ><b>每天 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item5" value="一星期一或两次" ><b>一星期一或两次 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item5" value="一个月一或两次" ><b>一个月一或两次  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item5" value="没有" ><b>没有 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item6">
+              <h4>5 父母和你讨论你的学校作业吗？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item6" value="每天" ><b>每天 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item6" value="一星期一或两次" ><b>一星期一或两次 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item6" value="一个月一或两次" ><b>一个月一或两次  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item6" value="没有 " ><b>没有 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item7">
+              <h4>6 你的父母确认你有抽出时间做作业吗？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item7" value="每天 " ><b>每天 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item7" value="一星期一或两次" ><b>一星期一或两次 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item7" value="一个月一或两次" ><b>一个月一或两次  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item7" value="没有" ><b>没有 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item8">
+              <h4>7 你的父母检查你是否做好作业？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item8" value="每天" ><b>每天 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item8" value="一星期一或两次" ><b>一星期一或两次 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item8" value="一个月一或两次" ><b>一个月一或两次  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item8" value="没有 " ><b>没有 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item9">
+              <h4>8 你们学校有图书馆吗？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item9" value="有" ><b>有 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item9" value="没有" ><b>没有 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item10">
+              <h4>9 你是否经常从你的学校图书馆或公共图书馆借书？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-10 col-sm-6 col-md-4 control-label"><input type="radio" class="myData" name="item10" value="一星期至少一次" ><b>一星期至少一次</b></label>
+                  <label class="col-xs-10 col-sm-6 col-md-4 control-label"><input type="radio" class="myData" name="item10" value="一星期一或两次" ><b>一星期一或两次 </b></label>
+                  <label class="col-xs-10 col-sm-6 col-md-4 control-label"><input type="radio" class="myData" name="item10" value="一个月一或两次 " ><b>一个月一或两次  </b></label>
+                  <label class="col-xs-10 col-sm-6 col-md-4 control-label"><input type="radio" class="myData" name="item10" value="沒有或几乎沒有" ><b>沒有或几乎沒有 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item11">
+              <h4>10 你一天的睡眠时间大约是？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item11" value="少于6小时 " ><b>少于6小时 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item11" value="6-7小时" ><b>6-7小时 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item11" value="7-8小时" ><b>7-8小时  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item11" value="8-9小时" ><b>8-9小时  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item11" value="9小时以上 " ><b>9小时以上  </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item12">
+              <h4>11 你有没有参加数学课外辅导班？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item12" value="有" ><b>有 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item12" value="没有" ><b>没有 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item13">
+              <h4>12 你放学后平均每天做数学家庭作业的时间是？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item13" value="0.5小时以内" ><b>0.5小时以内 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item13" value="0.5小时～1小时" ><b>0.5小时～1小时 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item13" value="1小时～2小时" ><b>1小时～2小时  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item13" value="2小时及以上" ><b>2小时及以上 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item14">
+              <h4>13 对你而言，哪门学科最难？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="语文" ><b>语文 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="数学" ><b>数学 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="英语" ><b>英语  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="其他" ><b>其他</b></label>
+                </div>
+              </div>
+            </section>
+            
+            <section required="true" class="section-block-0" id="item15">
+              <h4>14 你每天平均用于身体锻炼的时间是？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="不足30分钟" ><b>不足30分钟</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="30分钟～1小时" ><b>30分钟～1小时 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="1小时～2小时" ><b>1小时～2小时  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="2小时及以上" ><b>2小时及以上 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item16">
+              <h4>15 你会在课前预习吗？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item16" value="会<" ><b>会</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item16" value="不会" ><b>不会 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item17">
+              <h4>16 你为了学习而不按时吃饭和睡觉。</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item17" value="从不" ><b>从不</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item17" value="偶尔" ><b>偶尔 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item17" value="有时" ><b>有时 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item17" value="经常 " ><b>经常 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item17" value="总是 " ><b>总是 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item18">
+              <h4>17 你因为晚上看电视或看书刊等，而睡眠不足。</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item18" value="从不" ><b>从不</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item18" value="偶尔" ><b>偶尔 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item18" value="有时" ><b>有时 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item18" value="经常" ><b>经常 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item18" value="总是" ><b>总是 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item19">
+              <h4>18上课时，你精神不集中做小动作或小声讲话而不听老师讲课。</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item19" value="从不" ><b>从不</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item19" value="偶尔" ><b>偶尔 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item19" value="有时" ><b>有时 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item19" value="经常" ><b>经常 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item19" value="总是" ><b>总是 </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item20">
+              <h4>19 你觉得每天的生活无聊？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item20" value="从不" ><b>从不</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item20" value="偶尔" ><b>偶尔 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item20" value="有时" ><b>有时 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item20" value="经常" ><b>经常 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item20" value="总是" ><b>总是 </b></label>
+                </div>
+              </div>
+            </section>
+            
+            <section required="true" class="section-block-0" id="item21">
+              <h4>20 老师会给你们比较自由宽松的学习时间？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item21" value="完全不符合 " ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item21" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item21" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item21" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item21" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item22">
+              <h4>21 课上老师会让你们进行小组讨论或组成合作学习小组？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item22" value="完全不符合 " ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item22" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item22" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item22" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item22" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item23">
+              <h4>22 你们班的课堂秩序很好？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item23" value="1" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item23" value="2" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item23" value="2" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item23" value="2" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item23" value="2" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item24">
+              <h4>23 你们班上功课负担很重？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item24" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item24" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item24" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item24" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item24" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item25">
+              <h4>24 上课时同学们安静，专心听讲？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item25" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item25" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item25" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item25" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item25" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item26">
+              <h4>25 在考试前，你总感到苦恼？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item26" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item26" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item26" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item26" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item26" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item27">
+              <h4>26 在考试前，你常做关于考试的梦？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item27" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item27" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item27" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item27" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item27" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item28">
+              <h4>27 在紧张的考试中，你却会想些与考试无关的事情，注意力集中不起来？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item28" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item28" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item28" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item28" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item28" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section><section required="true" class="section-block-0" id="item29">
+              <h4>28 如果你考得不好，父母或老师会严厉指责你？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item29" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item29" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item29" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item29" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item29" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item30">
+              <h4>29 你对考试十分厌烦？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item30" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item30" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item30" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item30" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item30" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item31">
+              <h4>30 可以马上做完的事情，你总喜欢拖一拖？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item31" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item31" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item31" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item31" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item31" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item32">
+              <h4>31 每次你制定一个运动计划或学习计划，你都会坚持执行？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item32" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item32" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item32" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item32" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item32" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item33">
+              <h4>32 不管怎样，你会一直坚持到做完作业再去做别的事情？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item33" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item33" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item33" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item33" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item33" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item34">
+              <h4>33 即使你不喜欢做有些事情，你还是会把它做完的？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item34" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item34" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item34" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item34" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item34" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item35">
+              <h4>34 别人不督促你，你也主动学习？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item35" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item35" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item35" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item35" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item35" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item36">
+              <h4>35 生活中或学习上一旦决定了做什么，你能坚持到底？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item36" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item36" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item36" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item36" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item36" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item37">
+              <h4>36 除了老师指定的作业外，你不想做其他的数学题？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item37" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item37" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item37" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item37" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item37" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item38">
+              <h4>37 如果遇到不会做的数学题，你就不做？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item38" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item38" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item38" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item38" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item38" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item39">
+              <h4>38 为了把数学学好，你放弃了许多感兴趣的活动？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item39" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item39" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item39" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item39" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item39" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item40">
+              <h4>39 上课时你总是聚精会神地听老师的讲解？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item40" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item40" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item40" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item40" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item40" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item41">
+              <h4>40 你平时没有订什么数学学习计划，即使是寒、暑假期间或准备考试期间也是这样？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item41" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item41" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item41" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item41" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item41" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item42">
+              <h4>41 学习时，你自己很少用笔划线、做记号？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item42" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item42" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item42" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item42" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item42" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item43">
+              <h4>42 数学作业中有些不好解答的题目，你总要自己尽力想法解答，实在做不出来，去问老师或同学？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item43" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item43" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item43" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item43" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item43" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item44">
+              <h4>43 上课或自己复习功课时，你常常觉得时间过得很慢？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item44" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item44" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item44" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item44" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item44" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item45">
+              <h4>44 你尽量做到当天的数学功课当天就进行复习并做完作业？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item45" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item45" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item45" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item45" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item45" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item46">
+              <h4>45 你对数学应用题感到十分困难？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item46" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item46" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item46" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item46" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item46" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item47">
+              <h4>46 你在数学作业或考试中常犯些粗心的错误？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item47" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item47" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item47" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item47" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item47" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item48">
+              <h4>47 你在数学中学到许多有趣的事？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item48" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item48" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item48" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item48" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item48" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item49">
+              <h4>48 你喜欢数学？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item49" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item49" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item49" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item49" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item49" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item50">
+              <h4>49 在你的身边，你所学的数学知识经常得到应用？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item50" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item50" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item50" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item50" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item50" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item51">
+              <h4>50 不管你现在数学的成绩怎样,你觉得数学这门课你一定能学好？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item51" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item51" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item51" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item51" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item51" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item52">
+              <h4>51 你对老师上课讲的内容有兴趣？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item52" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item52" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item52" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item52" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item52" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item53">
+              <h4>52 你喜欢你的数学老师？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item53" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item53" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item53" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item53" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item53" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-1" id="item54">
+              <h4>53 和其他任何科目比起来,你觉得数学比较难？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item54" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item54" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item54" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item54" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item54" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block-0" id="item55">
+              <h4>54 在学习数学过程中,当你遇到困难时,你会努力克服？</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item55" value="完全不符合" ><b>完全不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item55" value="有点不符合" ><b>有点不符合 </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item55" value="不确定" ><b>不确定  </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item55" value="有点符合" ><b>有点符合</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item55" value="完全符合" ><b>完全符合</b></label>
+                </div>
+              </div>
+            </section>                            
+          </article>
+          <!--  
+          <div class="row">  
+            <div class="col-xs-3 col-sm-3col-md-4"></div>
+            <div class="col-xs-6 col-sm-6 col-md-4" style="text-align:center;"><button id="submitQuestion" type="submit" class="btn btn-success btn-lg">提交</button></div>
+            <div class="col-xs-3 col-sm-3 col-md-4"></div>
+          </div>
+          -->
+        </form>
+      </div>
+      <div class="col-sm-1 col-md-2 "></div>  
+    </div>
+    <footer class="container">
+      <nav class="navber naver-default navbar-fixed-bottom tool-bar">
+          <div class="row">  
+            <div class="col-xs-3 col-sm-3 col-md-4"></div>
+            <div class="col-xs-6 col-sm-6 col-md-4" style="text-align:center;margin-top:5px;"><button id="submitQuestion" type="submit" class="btn btn-success">提交</button></div>
+            <div class="col-xs-3 col-sm-3 col-md-4"></div>
+          </div>         
+      </nav>      
+    </footer>
+    <script type="text/javascript" data-main="/survey/static/scripts/main" src="/survey/static/scripts/require.js"></script>
+  <script type="text/javascript">  
+    var v = 20150918;
+    requirejs.config({
+      urlArgs : "v="+v
+    });
+  </script>    
+</body>
+</html>
