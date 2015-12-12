@@ -101,13 +101,8 @@
 		<level value="ERROR" />
 		<appender-ref ref="ASYNC" />
 	</logger>
-	<logger name="com.easytnt">
+	<logger name="com.anyjoy">
 		<level value="debug" />
 		<appender-ref ref="ASYNC" />
 	</logger>
-	<logger name="com.easytnt.exception">
-		<level value="debug" />
-		<appender-ref ref="ASYNC" />
-	</logger>
-
 </configuration>

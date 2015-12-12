@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<title>综合素质评价</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="renderer" content="webkit">
+<link href="static/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="static/css/bootstrap/font-awesome.min.css">
+<link rel="stylesheet" href="static/css/main.css">
+<!--[if IE ]>
+<link rel="stylesheet" href="static/css/cntest.ie.min.css"/>
+<link rel="stylesheet" href="static/css/survey_answer_ie.css"/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="static/css/bootstrap/font-awesome-ie7.min.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="static/script/lib/bootstrap/html5shiv.js"></script>
+<script src="static/script/lib/bootstrap/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div id="app">
+    <nav class="navbar navbar-default navbar-fixed-top" >
+      <div class="container" >
+        <div class="navbar-header row" >
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 user-info"><strong>张无忌</strong><span>同学</span></div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only" >Toggle navigation</span>
+            <span class="icon-bar" ></span>
+            <span class="icon-bar" ></span>
+            <span class="icon-bar" ></span>
+          </button>
+          </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" >
+          <div class="navbar-right" >
+            <form method="post" action="/login" class="navbar-form" novalidate="" >
+              <div class="form-group" >
+                <input type="text" name="username" placeholder="账号" class="form-control" >
+              </div>
+              <div class="form-group" >
+                <input type="password" name="password" class="form-control" placeholder="密码" >
+              </div>
+              <button type="submit" class="btn btn-primary" >登录</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron home" >
+      <div class="container" >     
+        <h1 id="app-title">XXX市学生综合素质评价</h1>
+        <div class="text-wrapper" >
+          <p>
+            <span>初中毕业生综合素质评价 </span><strong >万岁</strong>
+            <span>提供综合素质，培养共产主义接班人培养共产主义接班人培养共产主义接班人培养共产主义接班人培养共产主义接班人.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="home-panel">
+      <div class="container steps">
+        <h1>请填写下面的评价表</h1>
+        <div class="home-panel-heading-divider"></div>
+        <p class="home-panel-subheading">学生请填写学生互评表，学生自己评表；任课教师请填写学生评价表</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="glyphicon glyphicon-download-alt" ></div>
+            <h2 >学生互评</h2>
+            <p>学生请填写学生互评表 </p>
+          </div>
+          <div class="col-md-4">
+            <div class="glyphicon glyphicon-th-list" ></div>
+            <h2 >学生自评</h2>
+            <p>学生请填写学生互评表 </p>
+          </div>
+          <div class="col-md-4">
+            <div class="glyphicon glyphicon-cog" ></div>
+            <h2 >教师评价</h2>
+            <p>学生请填写学生互评表 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </div>
+</body>
+</html>

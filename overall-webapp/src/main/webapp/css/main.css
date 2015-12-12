@@ -1,40 +1,214 @@
-html{height:100%;position:relative;}
-body{color:#393939;font-family:'microsoft yahei','Open Sans';font-size:13px;line-height:1.5;height:100%;padding-bottom:0;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:'microsoft yahei',"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1;}h5{font-size:15px;font-weight:normal;}h5.small{font-size:14px;}a,a:hover,a:active{color:#00a0e9;}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #e7e7e7;
+html {
+	height: 100%;
+	position: relative;
 }
 
-@media (min-width: 768px)
-.navbar-form {
-    width: auto;
-    border: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+body {
+	color: #393939;
+	font-family: 'microsoft yahei', 'Open Sans';
+	font-size: 14px;
+	line-height: 1.5;
+	height: 100%;
+	padding-bottom: 0;
 }
-.navbar-form {
-    padding: 10px 15px;
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);
-    margin: 6px -15px;
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family: 'microsoft yahei', "Open Sans", "Helvetica Neue", Helvetica,
+		Arial, sans-serif;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+h5 {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+h5.small {
+	font-size: 14px;
+}
+
+a,a:hover,a:active {
+	color: #00a0e9;
+}
+
+
+.navbar{
+	background: transparent;
+	border:0px;
+}
+
+.navbar .navbar-header{
+	width:50%;
+}
+
+.navbar .container{
+	padding-left:0px;
+}
+
+@media screen and (max-width:768px){
+	.navbar{
+		background: #73d0f0 ;
+	}
+	.navbar .navbar-header{
+		width:auto;
+	}
+	
+	.navbar .container{
+		padding-left:15px;
+	}
+}
+
+
+
+.navbar .user-info{
+	margin-top:12px;
+	color:#fff;
+	padding-left:0px;
+}
+
+.navbar .user-info strong{
+	margin:0px 5px;
 }
 
 .navbar-form .form-group:first-child {
     margin-right: .3em;
 }
 
-@media (min-width: 768px)
-.navbar-form .control-label, .navbar-form .form-group {
-    margin-bottom: 0;
-    vertical-align: middle;
+.jumbotron{
+	background: radial-gradient(ellipse at center,#73d0f0 0,#73d0f0 4%,#3d9dd0 100%);
+	padding: 0;
+    border-bottom: 20px solid #03739C;
 }
-@media (min-width: 768px)
-.navbar-form .form-control-static, .navbar-form .form-group {
-    display: inline-block;
+
+.jumbotron.home {
+    margin-bottom: 0;
+    padding-top:90px;
+}
+
+#app-title{
+	position: absolute;
+	top: -45px;
+	margin: 0;
+	padding: 0;
+}
+
+.jumbotron .container {
+    position: relative;
+    background: url(images/splash.svg) bottom right no-repeat;
+    color: #fff;
+    padding: 45px 0;
+}
+
+@media screen and (max-width:768px){
+	.jumbotron .container {
+	    position: relative;
+	    background: none;
+	    color: #fff;
+	    padding: 45px 0;
+	}
+	#app-title {
+	    text-align: center;
+	    top: -30px;
+	}
+}
+
+.jumbotron .container .text-wrapper {
+    width: 50%;
+    font-size: 14px;
+}
+
+@media screen and (max-width:768px){
+	.jumbotron .container .text-wrapper {
+	    width: 100%;
+	    padding:0 15px;
+	}
+}
+
+.container-fluid:after, .container-fluid:before, .container:after, .container:before, .row:after, .row:before {
+	display: table;
+	content: " ";
+}
+
+.home-panel{
+	padding: 2em 0;
+}
+
+.home-panel h1 {
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+}
+
+.home-panel-heading-divider {
+	display: block;
+	width: 55px;
+	background-color: #2BBAED;
+	height: 2px;
+	margin: 1em auto;
+}
+
+.home-panel-subheading {
+	text-align: center;
+	margin-top: 0;
+}
+
+.steps .row {
+	margin-top: 2.2em;
+}
+
+.steps .col-md-4 {
+	padding: 0 75px;
+	text-align: center;
+}
+
+.steps .glyphicon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.steps .glyphicon-download-alt {
+	border: 5px solid #2BBAED;
+	border-radius: 150px;
+	padding: 16px 19px 19px 16px;
+}
+
+.steps .glyphicon-th-list {
+	border: 5px solid #2BBAED;
+	border-radius: 150px;
+	padding: 18px;
+}
+
+.steps .glyphicon-cog {
+	border: 5px solid #2BBAED;
+	border-radius: 150px;
+	padding: 19px 17px 17px 19px;
+}
+.steps .glyphicon-cog, .steps .glyphicon-download-alt, .steps .glyphicon-th-list {
+	font-size: 60px;
+	color: #2BBAED;
+	text-align: center;
+}
+
+
+.steps h2 {
+	margin-bottom: 25px;
+}
+
+.home-panel h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+}
+
+.dockunit-setup .generate p, .help h4, .home-panel h2, .latest-build .add-dockunit {
+	font-weight: 700;
 }
