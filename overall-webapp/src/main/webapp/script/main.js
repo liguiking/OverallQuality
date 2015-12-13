@@ -10,7 +10,7 @@ Array.prototype.remove = function(obj) {
 	if(index != -1) {
 		this.splice(index, 1);
 	}
-}
+};
 
 function getUrlFileName(){
 	var pathname = window.location.pathname;
@@ -73,12 +73,10 @@ if(browser.ie && browser.ie * 1 < 10){
 }
 //IEMobile10 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-	var msViewportStyle = document.createElement('style')
-	msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'))
-	document.querySelector('head').appendChild(msViewportStyle)
+	var msViewportStyle = document.createElement('style');
+	msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
+	document.querySelector('head').appendChild(msViewportStyle);
 }
-
-
 
 var config = {
 	contextPath : window.app.rootPath,
@@ -87,20 +85,26 @@ var config = {
 
 	paths : {
 		"jquery" : jqueryPath,
+		"pager" : "lib/jquery/jquery.pager",
 		"bootstrap" : "lib/bootstrap/bootstrap.min",
-		"bootstrapSlider" : "lib/bootstrap/plugins/bootstrap-slider/bootstrap.slider.v4",
-		"chart" : "lib/highcharts/highcharts",
+		"select" : "lib/bootstrap/plugins/bootstrap-select",
+		"datapicker" : "lib/bootstrap/plugins/bootstrap-datetimepicker",
+		"icheck" : "lib/bootstrap/plugins/iCheck/icheck.min",
+		"ichart":"lib/ichart/ichart.1.2.min",
 		"dialog":"commons/dialog",
 		"ui":"commons/uiwrapper", 
 		"ajax":"commons/ajax",
 		"ajaxwrapper":"commons/ajaxwrapper",
 		"logger":"util/logger",
+		"funcs":"commons/functions",
 		"StringBuffer":"ext/StringBuffer",
 		"Map":"ext/Map"
 	},
 	shim : {
 		'bootstrap' : {deps:['jquery']},
-		'chart' : {deps:['jquery']}
+		'chart' : {deps:['jquery']},
+		'select' : {deps:['bootstrap']},
+		'icheck' : {deps:['bootstrap']}
 	}
 };
 if(browser.isMobile()){
@@ -121,7 +125,7 @@ if(browser.ie && !browser.isMobile()){
 requirejs.config(config);
 
 //两次require,确保公共方法加载完成后才加入模块
-require(['jquery','bootstrap','commons/functions'], function($) {
+require(['jquery','bootstrap','funcs'], function($) {
 	var p = [ 'app/' + window.app.entry ];
 	if(!window.JSON){//如果浏览器不支持JSON，使用JSON2
 		p[1]="util/json2";
@@ -129,7 +133,7 @@ require(['jquery','bootstrap','commons/functions'], function($) {
 	require(p, function(module) {
 		//Android4.1 系统默认的浏览器将不会显示侧边栏控件
 		if(browser.android){
-			$('select.form-control').removeClass('form-control').css('width', '100%')
+			$('select.form-control').removeClass('form-control').css('width', '100%');
 		}
 		
 		if(module){

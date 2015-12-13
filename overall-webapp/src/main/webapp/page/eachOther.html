@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title>互评</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="renderer" content="webkit">
+<link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/bootstrap/font-awesome.min.css">
+<link rel="stylesheet" href="../css/bootstrap/iCheck/all.css">
+
+<!--[if IE ]>
+<link rel="stylesheet" href="../css/ie.min.css"/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="../css/bootstrap/font-awesome-ie7.min.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="../script/lib/bootstrap/html5shiv.js"></script>
+<script src="../script/lib/bootstrap/respond.min.js"></script>
+<![endif]-->
+</head>
+<body entry="/filling" rootpath="/overall/" >
+    <nav id="navigation" class="navbar navbar-default navbar-fixed-top tool-bar" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-navbar-collapse-1">
+                    <span class="sr-only">开/关导航栏</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index"></a>
+            </div>
+          <div class="navbar-collapse collapse" id="bs-navbar-collapse-1" style="height: 1px;">
+                <div class="writer-detail"></div>
+          </div>
+        </div>
+    </nav> 
+    <div class="container-fluid" >
+      <div class="col-sm-1 col-md-2 "></div>
+      <div class="col-xs-12 col-sm-10 col-md-8 ">  
+        <div id="mobileLogin">
+          <p class="text-warning">c<p>      
+        </div>
+        <div class="logintips">
+          <p class="text-success">f<p>      
+        </div>        
+        <form class="form-edit" visibled="false" id="questionForm" method="POST" action="answer/direct/-1/-1"> 
+          <article>
+            <h1 style="text-align:center;">互评</h1>
+            <section required="true" class="section-block" id="1">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-success">
+                  <h3>道德品质与公民素养</h3>
+                  <ul>
+                    <li>
+                      <h4>文明礼貌</h4>
+                      <ul>
+                        <li>
+                          <h5>对他人有礼貌</h5>
+                          <div class="form-group row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="5" ><b>A</b></label>
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="4" ><b>B </b></label>
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="3" ><b>C</b></label>
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="1" ><b>D </b></label>
+                            </div>
+                          </div>                                                    
+                        </li>
+                        <li>
+                          <h5>与他人友好相处</h5>
+                          <div class="form-group row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="5" ><b>A</b></label>
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="4" ><b>B </b></label>
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="3" ><b>C</b></label>
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="1" ><b>D </b></label>
+                            </div>
+                          </div>                        
+                        </li>
+                        <li>
+                          <h5>言行文明</h5>
+                          <div class="form-group row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="5" ><b>A</b></label>
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="4" ><b>B </b></label>
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="3" ><b>C</b></label>
+                              <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item15" value="1" ><b>D </b></label>
+                            </div>
+                          </div>                        
+                        </li>                        
+                      </ul>                    
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>                            
+          </article>
+        </form>
+      </div>
+      <div class="col-sm-1 col-md-2 "></div>  
+    </div>
+    <footer class="container">
+      <nav class="navber naver-default navbar-fixed-bottom tool-bar">
+          <div class="row">  
+            <div class="col-xs-3 col-sm-3 col-md-4"></div>
+            <div class="col-xs-6 col-sm-6 col-md-4" style="text-align:center;margin-top:5px;"><button id="submitQuestion" type="submit" class="btn btn-success">提交</button></div>
+            <div class="col-xs-3 col-sm-3 col-md-4"></div>
+          </div>         
+      </nav>      
+    </footer>
+    <script type="text/javascript" data-main="../script/main" src="../script/require.js"></script>
+  <script type="text/javascript">  
+    var v = 20150918;
+    requirejs.config({
+      urlArgs : "v="+v
+    });
+  </script>    
+</body>
+</html>

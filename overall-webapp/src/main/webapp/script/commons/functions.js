@@ -93,11 +93,20 @@
 				
 				return false;
 			};
-		}
+		};
 		
 		window['login'] = function(data) {
 
-		}
+		};
+		
+		window['logger'] = {
+			log : function(msg){
+				if (window.console) {
+					console.log(msg);
+				}				
+			}
+		};
+		
 		Array.prototype.contains = function(obj) {
 		    var i = this.length;
 		    while (i--) {
@@ -106,6 +115,6 @@
 		        }
 		    }
 		    return false;
-		}		
+		};
 	});
 })();

@@ -158,7 +158,7 @@ a,a:hover,a:active {
 	margin-top: 2.2em;
 }
 
-.steps .col-md-4 {
+.steps .col-md-3 {
 	padding: 0 75px;
 	text-align: center;
 }
@@ -192,7 +192,14 @@ a,a:hover,a:active {
 	border-radius: 150px;
 	padding: 19px 17px 17px 19px;
 }
-.steps .glyphicon-thumbs-up, .steps .glyphicon-retweet, .steps .glyphicon-edit {
+
+.steps .glyphicon-list {
+	border: 5px solid #2BBAED;
+	border-radius: 150px;
+	padding: 19px 17px 17px 19px;
+}
+
+.steps .glyphicon-thumbs-up, .steps .glyphicon-retweet, .steps .glyphicon-edit,.steps .glyphicon-list {
 	font-size: 60px;
 	color: #2BBAED;
 	text-align: center;
@@ -211,4 +218,41 @@ a,a:hover,a:active {
 
 .dockunit-setup .generate p, .help h4, .home-panel h2, .latest-build .add-dockunit {
 	font-weight: 700;
+}
+
+
+
+
+/****************填写评价表***************/
+#filling .form-edit{
+	display: none;
+}
+
+#filling .iradio_square-blue{
+	margin-right:15px;
+}
+
+#filling .navbar-default {
+	background-color: #3d9dd0;
+	border-bottom:1px solid #03739C;
+}
+
+section>h4{
+	padding-left:15px;
+}
+
+.section-block{
+	margin:15px 0;
+	border: 1px solid #3d9dd0;
+	border-left: 5px solid #3d9dd0;
+}
+section article:nth-of-type(odd) .section-block{
+	border: 1px solid #2f973f;
+	border-left: 5px solid #2f973f;
+}
+
+@media screen and (max-width:768px){
+	#filling .form-edit label{
+	    margin:15px 0;
+	}
 }

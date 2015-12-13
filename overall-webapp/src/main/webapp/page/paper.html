@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title>九年级学生互评</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="renderer" content="webkit">
+<link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/bootstrap/font-awesome.min.css">
+<link rel="stylesheet" href="../css/bootstrap/iCheck/all.css">
+<link rel="stylesheet" href="../css/main.css">
+<!--[if IE ]>
+<link rel="stylesheet" href="../css/ie.min.css"/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="../css/bootstrap/font-awesome-ie7.min.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="../script/lib/bootstrap/html5shiv.js"></script>
+<script src="../script/lib/bootstrap/respond.min.js"></script>
+<![endif]-->
+</head>
+<body entry="filling" rootpath="/overall/" >
+  <div id="filling">
+    <nav id="navigation" class="navbar navbar-default navbar-fixed-top tool-bar" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-navbar-collapse-1">
+                    <span class="sr-only">开/关导航栏</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index"></a>
+            </div>
+	        <div class="navbar-collapse collapse" id="bs-navbar-collapse-1" style="height: 1px;">
+                <div class="writer-detail"></div>
+	        </div>
+        </div>
+    </nav> 
+    <div class="container-fluid" >
+      <div class="col-sm-1 col-md-2 "></div>
+      <div class="col-xs-12 col-sm-10 col-md-8 ">  
+        <div id="mobileLogin">
+          <p class="text-warning">tt<p>      
+        </div>
+        <div class="logintips">
+          <p class="text-success">aa<p>      
+        </div>        
+        <form class="form-edit" visibled="false" id="fillForm" method="POST" action="fill"> 
+          <article>
+            <h1 style="text-align:center;">九年级同学综合素质评价</h1>
+            <h2 style="text-align:center;">学生互评</h2>
+            <p>亲爱的张无忌同学：你好！</p>
+            <p class="desc">你认为，谢逊同学在初中阶段</p>
+            <!-- 文明礼貌 -->
+            <section required="true" class="section-block" id="item1" data-target="道德品质与公民素养.文明礼貌">
+              <h4>对他人有礼貌</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item1" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item1" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item1" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item1" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block" id="item2" data-target="道德品质与公民素养.文明礼貌">
+              <h4>与他人友好相处</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item2" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item2" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item2" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item2" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block" id="item3" data-target="道德品质与公民素养.文明礼貌">
+              <h4>言行文明</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item3" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item3" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item3" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item3" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <!-- 正直守信 -->
+            <section required="true" class="section-block" id="item4" data-target="道德品质与公民素养.正直守信">
+              <h4>真诚待人</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item4" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item4" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item4" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item4" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block" id="item5" data-target="道德品质与公民素养.正直守信">
+              <h4>守信用</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item5" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item5" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item5" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item5" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block" id="item6" data-target="道德品质与公民素养.正直守信">
+              <h4>不做损人利己的事</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item6" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item6" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item6" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item6" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>  
+            <section required="true" class="section-block" id="item7" data-target="道德品质与公民素养.正直守信">
+              <h4>不作弊</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item7" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item7" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item7" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item7" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <!-- 热爱劳动 -->
+            <section required="true" class="section-block" id="item8" data-target="道德品质与公民素养.热爱劳动">
+              <h4>尊重他人劳动成果</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item8" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item8" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item8" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item8" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block" id="item9" data-target="道德品质与公民素养.热爱劳动">
+              <h4>积极参加力所能及的劳动</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item9" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item9" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item9" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item9" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block" id="item10" data-target="道德品质与公民素养.热爱劳动">
+              <h4>积极参加力所能及的劳动</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item10" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item10" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item10" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item10" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <!-- 遵纪守法 -->
+            <section required="true" class="section-block" id="item11" data-target="道德品质与公民素养.遵纪守法">
+              <h4>有规则意识</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item11" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item11" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item11" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item11" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block" id="item12" data-target="道德品质与公民素养.遵纪守法">
+              <h4>有规则意识</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item12" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item12" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item12" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item12" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block" id="item13" data-target="道德品质与公民素养.遵纪守法">
+              <h4>具备法律常识，遵守法律法规</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item13" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item13" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item13" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item13" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <section required="true" class="section-block" id="item14" data-target="道德品质与公民素养.遵纪守法">
+              <h4>遵守中学生行为规范</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>
+            <!-- 责任感 -->
+            <section required="true" class="section-block" id="item14" data-target="道德品质与公民素养.责任感">
+              <h4>遵守中学生行为规范</h4>
+              <div class="form-group row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-radio">
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="5" ><b>A</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="4" ><b>B </b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="3" ><b>C</b></label>
+                  <label class="col-xs-6 col-sm-4 col-md-3 control-label"><input type="radio" class="myData" name="item14" value="1" ><b>D </b></label>
+                </div>
+              </div>
+            </section>                                                                                                                                                                              
+          </article>
+        </form>
+      </div>
+      <div class="col-sm-1 col-md-2 "></div>  
+    </div>
+  </div>
+  <script type="text/javascript" data-main="../script/main" src="../script/require.js"></script>
+  <script type="text/javascript">  
+    var v = 201511118;
+    requirejs.config({
+      urlArgs : "v="+v
+    });
+  </script>    
+</body>
+</html>
