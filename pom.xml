@@ -49,6 +49,7 @@
 	<modules>
 		<module>anyjoy-test</module>
 		<module>anyjoy-commons</module>
+		<module>overall-domain</module>
 		<module>overall-web-support</module>
 		<module>overall-webapp</module>
 	</modules>
